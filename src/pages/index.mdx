@@ -38,19 +38,21 @@ export default ({ location, children }) => {
 ```jsx
 <div className="card">
   <h1 className="card-heading text--xxxl">
-    Build Responsive UIs with One Stylesheet and CSS Variables
+    A CSS Only Design System for Rapid, Responsive, Framework Agnostic UI
+    Prototyping
   </h1>
   <Image />
   <p className="card-text">
-    Featuring responsive typography and spacing, adjustable vertical rhythm,
-    light / dark themes by default. Customize with CSS variables.
+    Featuring responsive typography and spacing, calculated vertical rhythm,
+    responsive light / dark theme with @user-prefers media query, classes that
+    match semantic HTML elements.
   </p>
 </div>
 ```
 
 ---
 
-<h2 className="title" id="typography">
+<h2 className="title scroll-margin-top" id="typography">
   Typography
 </h2>
 
@@ -69,7 +71,7 @@ export default ({ location, children }) => {
 
 ---
 
-<h2 className="title" id="colors">
+<h2 className="title scroll-margin-top" id="colors">
   Colors
 </h2>
 
@@ -154,7 +156,7 @@ export default ({ location, children }) => {
 
 ---
 
-<h2 className="title" id="spacing">
+<h2 className="title scroll-margin-top" id="spacing">
   Spacing
 </h2>
 
@@ -204,7 +206,7 @@ export default ({ location, children }) => {
 
 ---
 
-<h2 className="title" id="components">
+<h2 className="title scroll-margin-top" id="components">
   Components
 </h2>
 <br />
@@ -234,7 +236,7 @@ export default ({ location, children }) => {
 
 ---
 
-<h3 id="button">{`<Button/>`}</h3>
+<h3 className="scroll-margin-top" id="button">{`<Button/>`}</h3>
 
 ```jsx
 <div>
@@ -251,7 +253,7 @@ export default ({ location, children }) => {
 
 ---
 
-<h3 id="card">{`<Card />`}</h3>
+<h3 className="scroll-margin-top" id="card">{`<Card />`}</h3>
 
 ```jsx
 <div className="card">
@@ -263,7 +265,7 @@ export default ({ location, children }) => {
 
 ---
 
-<h3 id="fieldset">{`<Fieldset />`}</h3>
+<h3 className="scroll-margin-top" id="fieldset">{`<Fieldset />`}</h3>
 
 ```jsx
 <fieldset className="fieldset">
@@ -278,7 +280,7 @@ export default ({ location, children }) => {
 
 ---
 
-<h3 id="figure">{`<Figure />`}</h3>
+<h3 className="scroll-margin-top" id="figure">{`<Figure />`}</h3>
 
 ```jsx
 <figure className="figure">
@@ -289,7 +291,7 @@ export default ({ location, children }) => {
 
 ---
 
-<h3 id="navlink">{`<Navlink />`}</h3>
+<h3 className="scroll-margin-top" id="navlink">{`<Navlink />`}</h3>
 
 ```js
 function Navlink({
@@ -312,13 +314,13 @@ function Navlink({
 
 ---
 
-<h3 id="navlinks">{`<Navlinks />`}</h3>
+<h3 className="scroll-margin-top" id="navlinks">{`<Navlinks />`}</h3>
 
 TODO
 
 ---
 
-<h3 id="textarea">{`<Textarea />`}</h3>
+<h3 className="scroll-margin-top" id="textarea">{`<Textarea />`}</h3>
 
 ```jsx
 <form className="form">
@@ -329,7 +331,7 @@ TODO
 
 ---
 
-<h2 className="title" id="layout">
+<h2 className="title scroll-margin-top" id="layout">
   Layout
 </h2>
 <br />

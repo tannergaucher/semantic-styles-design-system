@@ -596,3 +596,9 @@ hr {
   text-transform: uppercase;
   letter-spacing: var(--caps-letter-spacing);
 }
+
+/* LOCAL */
+
+.scroll-margin-top {
+  scroll-margin-top: var(--space-md);
+}
