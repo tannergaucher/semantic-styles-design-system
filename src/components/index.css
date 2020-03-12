@@ -114,6 +114,7 @@ body {
   -webkit-font-smoothing: antialiased;
   background: var(--bg-1);
   color: var(--text-color);
+  display: block;
 }
 
 a {
