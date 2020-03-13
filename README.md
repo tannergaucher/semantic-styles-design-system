@@ -44,6 +44,7 @@
 - `.center`
 - `.container`
 - `.content-grid`
+- `.aside-content-grid`
 - `.content-aside-grid`
 - `.image-grid`
 - `.content`
