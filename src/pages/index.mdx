@@ -34,6 +34,8 @@ export default ({ location, children }) => {
 }
 
 ```jsx
+// I'm a live code snippet. Try me out 👨‍💻
+
 <div className="card">
   <h1 className="card-heading text--xxxl">
     A CSS Only Design System for Rapid, Responsive, Framework Agnostic UI
@@ -410,10 +412,24 @@ TODO
 
 ```jsx
 <div className="aside-content-grid">
-  <aside className="aside" style={{ background: `var(--accent-2)` }}>
-    aside
+  <aside
+    className="aside"
+    style={{
+      background: `var(--accent-2)`,
+      color: `var(--accent-1)`,
+      borderRadius: `var(--radius)`,
+    }}
+  >
+    Aside
   </aside>
-  <div className="content" style={{ background: `var(--accent-1)` }}>
+  <div
+    className="content"
+    style={{
+      background: `var(--accent-1)`,
+      color: `var(--accent-2)`,
+      borderRadius: `var(--radius)`,
+    }}
+  >
     Content
   </div>
 </div>

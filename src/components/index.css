@@ -551,7 +551,14 @@ hr {
 }
 
 @media (max-width: 600px) {
-  .content-aside-grid,
+  .content-aside-grid {
+    grid-template-areas:
+      "content"
+      "aside";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+  }
+
   .aside-content-grid {
     grid-template-areas:
       "aside"
