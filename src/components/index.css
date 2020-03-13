@@ -524,6 +524,13 @@ hr {
 
 .content-aside-grid {
   display: grid;
+  grid-template-areas: "content aside";
+  grid-template-columns: 5fr 2fr;
+  grid-column-gap: var(--space-md);
+}
+
+.aside-content-grid {
+  display: grid;
   grid-template-areas: "aside content";
   grid-template-columns: 2fr 5fr;
   grid-column-gap: var(--space-md);
@@ -544,7 +551,8 @@ hr {
 }
 
 @media (max-width: 600px) {
-  .content-aside-grid {
+  .content-aside-grid,
+  .aside-content-grid {
     grid-template-areas:
       "aside"
       "content";
