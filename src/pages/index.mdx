@@ -1,7 +1,5 @@
 import { Layout, SEO, Image, Card } from "../components"
-
 import { useSiteMetadata } from "../hooks"
-
 import { Link } from "gatsby"
 
 export default ({ location, children }) => {
@@ -10,7 +8,7 @@ export default ({ location, children }) => {
     <Layout location={location}>
       <article className="page">
         <SEO title="Home" />
-        <div className="content-aside-grid">
+        <div className="aside-content-grid">
           <div className="content padding">{children}</div>
           <aside className="aside padding">
             <a className="nav-link" href="#typography">
@@ -340,19 +338,22 @@ TODO
     <h3>App</h3>
   </a>
   <a className="nav-link" href="#content-grid">
-    <h3>Content-Grid</h3>
+    <h3>Content Grid</h3>
+  </a>
+  <a className="nav-link" href="#aside-content-grid">
+    <h3>Aside Content Grid</h3>
   </a>
   <a className="nav-link" href="#content-aside-grid">
-    <h3>Content-Aside-Grid</h3>
+    <h3>Content Aside Grid</h3>
   </a>
   <a className="nav-link" href="#image-grid">
-    <h3>Image-Grid</h3>
+    <h3>Image Grid</h3>
   </a>
 </nav>
 
 ---
 
-<h3 id="app">{`<App />`}</h3>
+<h3 id="app" className="scroll-margin-top">{`<App />`}</h3>
 
 ```jsx
 <div>
@@ -385,7 +386,7 @@ TODO
 
 ---
 
-<h3 id="content-grid">{`<Content-Grid />`}</h3>
+<h3 id="content-grid" className="scroll-margin-top">{`<ContentGrid />`}</h3>
 
 ```js
 <div className="content-grid">
@@ -402,7 +403,28 @@ TODO
 
 ---
 
-<h3 id="content-aside-grid">{`<Content-Aside-Grid />`}</h3>
+<h3
+  id="aside-content-grid"
+  className="scroll-margin-top"
+>{`<AsideContentGrid />`}</h3>
+
+```jsx
+<div className="aside-content-grid">
+  <aside className="aside" style={{ background: `var(--accent-2)` }}>
+    aside
+  </aside>
+  <div className="content" style={{ background: `var(--accent-1)` }}>
+    Content
+  </div>
+</div>
+```
+
+---
+
+<h3
+  id="content-aside-grid"
+  className="scroll-margin-top"
+>{`<ContentAsideGrid />`}</h3>
 
 ```jsx
 <div className="content-aside-grid">
@@ -432,7 +454,7 @@ TODO
 
 ---
 
-<h3 id="image-grid">{`<ImageGrid />`}</h3>
+<h3 id="image-grid" className="scroll-margin-top">{`<ImageGrid />`}</h3>
 
 ```jsx
 <div className="image-grid only-fullscreen-padding">

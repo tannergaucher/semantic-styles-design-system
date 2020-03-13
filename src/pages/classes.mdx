@@ -9,7 +9,7 @@ export default ({ location, children }) => {
     <Layout location={location}>
       <article className="padding page">
         <SEO title="Home" />
-        <div className="content-aside-grid">
+        <div className="aside-content-grid">
           <div className="content">{children}</div>
           <aside className="aside">
             <a className="nav-link" href="#elements">
@@ -30,6 +30,8 @@ export default ({ location, children }) => {
     </Layout>
   )
 }
+
+<h1 className="text--xxxl title">Classes </h1>
 
 ---
 
@@ -72,6 +74,7 @@ export default ({ location, children }) => {
 - `.center`
 - `.container`
 - `.content-grid`
+- `.aside-content-grid`
 - `.content-aside-grid`
 - `.image-grid`
 - `.content`
