@@ -554,8 +554,8 @@ hr {
   .content-aside-grid,
   .aside-content-grid {
     grid-template-areas:
-      "aside"
-      "content";
+      "content"
+      "aside";
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
   }
