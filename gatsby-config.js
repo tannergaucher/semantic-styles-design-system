@@ -2,6 +2,9 @@ module.exports = {
   siteMetadata: {
     title: `Semantic Styles`,
     description: `A CSS-Only Design System for Rapid, Responsive UI Prototyping`,
+    subHeading: `Featuring responsive typography and spacing, calculated vertical
+    rhythm, responsive light / dark theme, classes that match
+    semantic HTML elements.`,
     author: `<tannermichaelgaucher@gmail>`,
     social: {
       github: `https://github.com/tannergaucher`,
