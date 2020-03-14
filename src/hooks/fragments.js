@@ -5,6 +5,7 @@ export const SiteMetadataFragment = graphql`
     siteMetadata {
       title
       description
+      subHeading
       author
       social {
         github

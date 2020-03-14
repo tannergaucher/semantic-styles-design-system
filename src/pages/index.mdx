@@ -3,7 +3,7 @@ import { useSiteMetadata } from "../hooks"
 import { Link } from "gatsby"
 
 export default ({ location, children }) => {
-  const { description } = useSiteMetadata()
+  const { description, subHeading } = useSiteMetadata()
   return (
     <Layout location={location}>
       <article className="page">
@@ -14,11 +14,7 @@ export default ({ location, children }) => {
             <div className="card">
               <h1 className="card-heading text--xxxl">{description}</h1>
               <Image />
-              <p className="card-text">
-                Featuring responsive typography and spacing, calculated vertical
-                rhythm, responsive light / dark theme, classes that match
-                semantic HTML elements.
-              </p>
+              <p className="card-text">{subHeading}</p>
             </div>
             <br />
             {children}
