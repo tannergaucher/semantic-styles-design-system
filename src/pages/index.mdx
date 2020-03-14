@@ -9,7 +9,20 @@ export default ({ location, children }) => {
       <article className="page">
         <SEO title="Home" />
         <div className="aside-content-grid">
-          <div className="content padding">{children}</div>
+          <div className="content padding">
+            <br />
+            <div className="card">
+              <h1 className="card-heading text--xxxl">{description}</h1>
+              <Image />
+              <p className="card-text">
+                Featuring responsive typography and spacing, calculated vertical
+                rhythm, responsive light / dark theme, classes that match
+                semantic HTML elements.
+              </p>
+            </div>
+            <br />
+            {children}
+          </div>
           <aside className="aside padding">
             <a className="nav-link" href="#typography">
               <h3>Typography</h3>
@@ -33,23 +46,6 @@ export default ({ location, children }) => {
   )
 }
 
-```jsx
-// I'm a live code snippet. Try me out 👨‍💻
-
-<div className="card">
-  <h1 className="card-heading text--xxxl">
-    A CSS Only Design System for Rapid, Responsive, Framework Agnostic UI
-    Prototyping
-  </h1>
-  <Image />
-  <p className="card-text">
-    Featuring responsive typography and spacing, calculated vertical rhythm,
-    responsive light / dark theme with @user-prefers media query, classes that
-    match semantic HTML elements.
-  </p>
-</div>
-```
-
 ---
 
 <h2 className="title scroll-margin-top" id="typography">
@@ -57,6 +53,8 @@ export default ({ location, children }) => {
 </h2>
 
 ```jsx
+// I'm a live code snippet. Try me out 👨‍💻
+
 <>
   <h1 className="title text--xxxl">Large Title Heading One</h1>
   <h1 className="title">Title Heading One</h1>

@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Semantic Styles`,
-    description: `A CSS Only Design System for Rapid, Responsive, Framework Agnostic UI Prototyping`,
+    description: `A CSS-Only Design System for Rapid, Responsive UI Prototyping`,
     author: `<tannermichaelgaucher@gmail>`,
     social: {
       github: `https://github.com/tannergaucher`,
