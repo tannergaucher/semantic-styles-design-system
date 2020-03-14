@@ -1,6 +1,6 @@
 # Semantic Styles
 
-## A CSS Only Design System for Rapid + Responsive + Framework Agnostic UI Prototyping
+## A CSS Design System for Rapid, Responsive UI Prototyping
 
 ## Features
 
