@@ -1,9 +1,10 @@
-import "./index.css"
-
-import { Link } from "gatsby"
-import { Navlinks } from "."
-import PropTypes from "prop-types"
 import React from "react"
+import PropTypes from "prop-types"
+import { Link } from "gatsby"
+
+import "semantic-styles"
+
+import { Navlinks } from "."
 import { useSiteMetadata } from "../hooks"
 
 const Layout = ({ location, children }) => {
@@ -12,7 +13,7 @@ const Layout = ({ location, children }) => {
     <>
       <header className="header padding">
         <Link to="/" className="nav-link">
-          <h2 className="site-title title">{title}</h2>
+          <h1 className="title">{title}</h1>
         </Link>
         <Navlinks location={location} />
       </header>
