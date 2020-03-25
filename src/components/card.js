@@ -1,5 +1,6 @@
-import { Image } from "."
 import React from "react"
+
+import { Image } from "."
 
 const Card = () => (
   <div className="card">

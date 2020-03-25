@@ -1,5 +1,6 @@
-import { Navlink } from "."
 import React from "react"
+
+import { Navlink } from "."
 
 const Navlinks = ({ location }) => (
   <nav className="nav">
