@@ -1,7 +1,9 @@
 import { Link } from "gatsby"
 
-import { Layout, SEO, Image, Card } from "../components"
 import { useSiteMetadata } from "../hooks"
+import { Layout, SEO, Image, Card } from "../components"
+
+<!-- LAYOUT -->
 
 export default ({ location, children }) => {
   const { description, subHeading } = useSiteMetadata()
@@ -43,13 +45,15 @@ export default ({ location, children }) => {
   )
 }
 
+<!-- MDX BODY  -->
+
 ---
 
 <h2 className="title scroll-margin-top" id="typography">
   Typography
 </h2>
 
-```jsx
+```jsx live="true"
 // I'm a live code snippet. Try me out 👨‍💻
 
 <>
@@ -70,7 +74,7 @@ export default ({ location, children }) => {
   Colors
 </h2>
 
-```jsx
+```jsx live="true"
 <div className="content-grid">
   <div
     style={{
@@ -155,7 +159,7 @@ export default ({ location, children }) => {
   Spacing
 </h2>
 
-```jsx
+```jsx live="true"
 <div>
   <div
     className="card"
@@ -230,7 +234,7 @@ export default ({ location, children }) => {
 
 <h3 className="scroll-margin-top" id="button">{`<Button/>`}</h3>
 
-```jsx
+```jsx live="true"
 <div>
   <button className="btn">Button</button>
   <button className="btn btn-primary">Primary Button</button>
@@ -247,7 +251,7 @@ export default ({ location, children }) => {
 
 <h3 className="scroll-margin-top" id="card">{`<Card />`}</h3>
 
-```jsx
+```jsx live="true"
 <div className="card">
   <h2 className="card-heading">Heading</h2>
   <Image />
@@ -259,7 +263,7 @@ export default ({ location, children }) => {
 
 <h3 className="scroll-margin-top" id="fieldset">{`<Fieldset />`}</h3>
 
-```jsx
+```jsx live="true"
 <fieldset className="fieldset">
   <form className="form" action="">
     <input className="input" type="email" placeholder="Input" />
@@ -274,7 +278,7 @@ export default ({ location, children }) => {
 
 <h3 className="scroll-margin-top" id="figure">{`<Figure />`}</h3>
 
-```jsx
+```jsx live="true"
 <figure className="figure">
   <Image />
   <figcaption className="figcaption">Figcaption</figcaption>
@@ -285,7 +289,7 @@ export default ({ location, children }) => {
 
 <h3 className="scroll-margin-top" id="navlink">{`<Navlink />`}</h3>
 
-```js
+```jsx live="true"
 function Navlink({
   text = "Navlink",
   to = "/components",
@@ -308,7 +312,7 @@ function Navlink({
 
 <h3 className="scroll-margin-top" id="textarea">{`<Textarea />`}</h3>
 
-```jsx
+```jsx live="true"
 <form className="form">
   <textarea className="textarea" />
   <button className="btn btn-primary">Submit</button>
@@ -343,7 +347,7 @@ function Navlink({
 
 <h3 id="app" className="scroll-margin-top">{`<App />`}</h3>
 
-```jsx
+```jsx live="true"
 <div>
   <header
     className="header padding"
@@ -376,7 +380,7 @@ function Navlink({
 
 <h3 id="content-grid" className="scroll-margin-top">{`<ContentGrid />`}</h3>
 
-```js
+```jsx live="true"
 <div className="content-grid">
   <Card />
   <Card />
@@ -396,7 +400,7 @@ function Navlink({
   className="scroll-margin-top"
 >{`<AsideContentGrid />`}</h3>
 
-```jsx
+```jsx live="true"
 <div className="aside-content-grid">
   <aside
     className="aside"
@@ -428,7 +432,7 @@ function Navlink({
   className="scroll-margin-top"
 >{`<ContentAsideGrid />`}</h3>
 
-```jsx
+```jsx live="true"
 <div className="content-aside-grid">
   <div
     className="content"
@@ -458,7 +462,7 @@ function Navlink({
 
 <h3 id="image-grid" className="scroll-margin-top">{`<ImageGrid />`}</h3>
 
-```jsx
+```jsx live="true"
 <div className="image-grid only-fullscreen-padding">
   <Image />
   <Image />
