@@ -23,9 +23,6 @@ export default ({ location, children }) => {
             {children}
           </div>
           <aside className="aside padding">
-            <a className="nav-link" href="#install">
-              <h3>Install</h3>
-            </a>
             <a className="nav-link" href="#typography">
               <h3>Typography</h3>
             </a>
@@ -52,21 +49,11 @@ export default ({ location, children }) => {
 
 ---
 
-<h2 className="title scroll-margin-top" id="install">
-  Install
-</h2>
-
-```
-npm install semantic-styles
-```
-
----
-
 <h2 className="title scroll-margin-top" id="typography">
   Typography
 </h2>
 
-```jsx
+```jsx live="true"
 // I'm a live code snippet. Try me out 👨‍💻
 
 <>
@@ -87,7 +74,7 @@ npm install semantic-styles
   Colors
 </h2>
 
-```jsx
+```jsx live="true"
 <div className="content-grid">
   <div
     style={{
@@ -172,7 +159,7 @@ npm install semantic-styles
   Spacing
 </h2>
 
-```jsx
+```jsx live="true"
 <div>
   <div
     className="card"
@@ -247,7 +234,7 @@ npm install semantic-styles
 
 <h3 className="scroll-margin-top" id="button">{`<Button/>`}</h3>
 
-```jsx
+```jsx live="true"
 <div>
   <button className="btn">Button</button>
   <button className="btn btn-primary">Primary Button</button>
@@ -264,7 +251,7 @@ npm install semantic-styles
 
 <h3 className="scroll-margin-top" id="card">{`<Card />`}</h3>
 
-```jsx
+```jsx live="true"
 <div className="card">
   <h2 className="card-heading">Heading</h2>
   <Image />
@@ -276,7 +263,7 @@ npm install semantic-styles
 
 <h3 className="scroll-margin-top" id="fieldset">{`<Fieldset />`}</h3>
 
-```jsx
+```jsx live="true"
 <fieldset className="fieldset">
   <form className="form" action="">
     <input className="input" type="email" placeholder="Input" />
@@ -291,7 +278,7 @@ npm install semantic-styles
 
 <h3 className="scroll-margin-top" id="figure">{`<Figure />`}</h3>
 
-```jsx
+```jsx live="true"
 <figure className="figure">
   <Image />
   <figcaption className="figcaption">Figcaption</figcaption>
@@ -302,7 +289,7 @@ npm install semantic-styles
 
 <h3 className="scroll-margin-top" id="navlink">{`<Navlink />`}</h3>
 
-```js
+```jsx live="true"
 function Navlink({
   text = "Navlink",
   to = "/components",
@@ -325,7 +312,7 @@ function Navlink({
 
 <h3 className="scroll-margin-top" id="textarea">{`<Textarea />`}</h3>
 
-```jsx
+```jsx live="true"
 <form className="form">
   <textarea className="textarea" />
   <button className="btn btn-primary">Submit</button>
@@ -360,7 +347,7 @@ function Navlink({
 
 <h3 id="app" className="scroll-margin-top">{`<App />`}</h3>
 
-```jsx
+```jsx live="true"
 <div>
   <header
     className="header padding"
@@ -393,7 +380,7 @@ function Navlink({
 
 <h3 id="content-grid" className="scroll-margin-top">{`<ContentGrid />`}</h3>
 
-```js
+```jsx live="true"
 <div className="content-grid">
   <Card />
   <Card />
@@ -413,7 +400,7 @@ function Navlink({
   className="scroll-margin-top"
 >{`<AsideContentGrid />`}</h3>
 
-```jsx
+```jsx live="true"
 <div className="aside-content-grid">
   <aside
     className="aside"
@@ -445,7 +432,7 @@ function Navlink({
   className="scroll-margin-top"
 >{`<ContentAsideGrid />`}</h3>
 
-```jsx
+```jsx live="true"
 <div className="content-aside-grid">
   <div
     className="content"
@@ -475,7 +462,7 @@ function Navlink({
 
 <h3 id="image-grid" className="scroll-margin-top">{`<ImageGrid />`}</h3>
 
-```jsx
+```jsx live="true"
 <div className="image-grid only-fullscreen-padding">
   <Image />
   <Image />
