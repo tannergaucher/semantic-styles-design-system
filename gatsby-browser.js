@@ -1,9 +1,9 @@
-import { Card, Image, P } from "./src/components"
-import { LiveEditor, LiveError, LivePreview, LiveProvider } from "react-live"
-
+import React from "react"
 import { Link } from "gatsby"
 import { MDXProvider } from "@mdx-js/react"
-import React from "react"
+import { LiveEditor, LiveError, LivePreview, LiveProvider } from "react-live"
+
+import { Card, Image, P } from "./src/components"
 
 const scope = {
   Image,
