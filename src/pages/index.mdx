@@ -1,7 +1,9 @@
 import { Link } from "gatsby"
 
-import { Layout, SEO, Image, Card } from "../components"
 import { useSiteMetadata } from "../hooks"
+import { Layout, SEO, Image, Card } from "../components"
+
+<!-- LAYOUT -->
 
 export default ({ location, children }) => {
   const { description, subHeading } = useSiteMetadata()
@@ -42,6 +44,8 @@ export default ({ location, children }) => {
     </Layout>
   )
 }
+
+<!-- MDX BODY  -->
 
 ---
 
