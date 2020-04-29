@@ -3,6 +3,7 @@ import PropTypes from "prop-types"
 import { Link } from "gatsby"
 
 import "semantic-styles"
+import "../local.css"
 
 import { Navlinks } from "."
 import { useSiteMetadata } from "../hooks"
